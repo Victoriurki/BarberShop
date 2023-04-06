@@ -1,0 +1,1 @@
+const ConteudoSchema = require('../schemes/ConteudoSchema');

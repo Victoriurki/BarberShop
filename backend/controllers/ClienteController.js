@@ -1,0 +1,1 @@
+const ClienteSchema = require('../schemes/ClienteSchema');
