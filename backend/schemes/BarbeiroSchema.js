@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const BarbeiroSchema = new mongoose.Schema({
-    nome: String,
-    telefone: String,
-    especialidade: String
-  });
+  nome: String,
+  telefone: String,
+  especialidade: String
+});
 
-  const Barbeiro = mongoose.model('Barbeiro', BarbeiroSchema);
+const Barbeiro = mongoose.model('Barbeiro', BarbeiroSchema);
