@@ -7,11 +7,11 @@ class AgendaController {
     async salvar(req, res) {
         const conteudo = req.body;
         const idDaAgenda = conteudo.agenda;
-        const idDoAgendamento = conteudo.agendamento;
+        const idsDoAgendamento = conteudo.agendamento;
 
         //agendamento a agenda
-        if (idDaAgenda != null && idDaAgenda != 'undefined' && idDoAgendamento != '') {
-            idDoAgendamento = await Agendamento.findOne({ '_id': idDoAgendamento });
+        if (idDaAgenda != null && idDaAgenda != 'undefined' && idsDoAgendamento != '') {
+            idsDoAgendamento = await Agendamento.find({ '_id': {$in: idsDoAgendamento} });
         }
         //cria uma agenda
         const resultado = await Agenda.create(resultado);
