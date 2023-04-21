@@ -6,7 +6,9 @@ const BarbeariaSchema = new mongoose.Schema({
   telefone: String,
   barbeiros: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Barbeiro' }],
   servicos: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Servico' }],
-  clientes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Cliente' }]
+  clientes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Cliente' }],
+  agenda: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Agenda' }],
 });
 
 const Barbearia = mongoose.model('Barbearia', BarbeariaSchema);
+module.exports = Barbearia;

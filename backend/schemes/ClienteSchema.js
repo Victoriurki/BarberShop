@@ -6,3 +6,4 @@ const ClienteSchema = new mongoose.Schema({
 });
 
 const Cliente = mongoose.model('Cliente', ClienteSchema);
+module.exports = Cliente;

@@ -6,3 +6,4 @@ const ServicoSchema = new mongoose.Schema({
 });
 
 const Servico = mongoose.model('Servico', ServicoSchema);
+module.exports = Servico;

@@ -7,3 +7,4 @@ const BarbeiroSchema = new mongoose.Schema({
 });
 
 const Barbeiro = mongoose.model('Barbeiro', BarbeiroSchema);
+module.exports = Barbeiro;
