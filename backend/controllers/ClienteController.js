@@ -1,5 +1,5 @@
 const Cliente = require('../schemes/ClienteSchema');
-const ClienteSchema = require('../schemes/ClienteSchema');
+
 
 class ClienteController {
     async listar(req, res){ 

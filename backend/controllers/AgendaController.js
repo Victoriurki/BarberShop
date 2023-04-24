@@ -1,4 +1,3 @@
-const AgendaSchema = require('../schemes/AgendaSchema');
 const Agenda = require('../schemes/AgendaScheme');
 const Agendamento = require('../schemes/AgendamentoSchema');
 const Barbearia = require('../schemes/BarbeariaSchema');

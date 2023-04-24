@@ -1,5 +1,5 @@
 const Barbeiro = require('../schemes/BarbeiroSchema');
-const BarbeiroSchema = require('../schemes/BarbeiroSchema');
+
 
 class BarbeiroController {
     async listar(req, res){ 

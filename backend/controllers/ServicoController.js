@@ -1,4 +1,3 @@
-const ConteudoSchema = require('../schemes/ConteudoSchema');
 const Servico = require('../schemes/ServicoSchema');
 
 class ServicoController {
