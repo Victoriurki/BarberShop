@@ -6,6 +6,13 @@ const Cliente = require('../schemes/ClienteSchema');
 const Servico = require('../schemes/ServicoSchema');
 
 class BarbeariaController {
+
+    async listar(req, res){ 
+        const resultado = await Barbearia.find({});
+        res.json(resultado);
+      }
+
+
     async salvar(req, res) {
         const conteudo = req.body;
         const idsDoCliente = conteudo.cliente;

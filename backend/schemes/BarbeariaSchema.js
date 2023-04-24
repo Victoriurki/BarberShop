@@ -7,7 +7,7 @@ const BarbeariaSchema = new mongoose.Schema({
   barbeiros: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Barbeiro' }],
   servicos: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Servico' }],
   clientes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Cliente' }],
-  agenda: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Agenda' }],
+  agenda: { type: mongoose.Schema.Types.ObjectId, ref: 'Agenda' },
 });
 
 const Barbearia = mongoose.model('Barbearia', BarbeariaSchema);
