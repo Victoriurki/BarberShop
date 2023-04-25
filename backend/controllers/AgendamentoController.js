@@ -1,4 +1,4 @@
-const Agenda = require('../schemes/AgendaScheme');
+const Agenda = require('../schemes/AgendaSchema');
 const Agendamento = require('../schemes/AgendamentoSchema');
 const Barbeiro = require('../schemes/BarbeiroSchema');
 const Cliente = require('../schemes/ClienteSchema');
@@ -19,9 +19,9 @@ class AgendamentoController {
 
     async salvar(req, res) {
         const conteudo = req.body;
-        const idDoCliente = conteudo.cliente;
-        const idDoBarbeiro = conteudo.barbeiro;
-        const idsDoServico = conteudo.servico;
+        let idDoCliente = conteudo.cliente;
+        let idDoBarbeiro = conteudo.barbeiro;
+        let idsDoServico = conteudo.servico;
         const idDoAgendamento = conteudo._id;
 
 

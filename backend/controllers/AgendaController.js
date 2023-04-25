@@ -1,6 +1,7 @@
-const Agenda = require('../schemes/AgendaScheme');
+const Agenda = require('../schemes/AgendaSchema');
 const Agendamento = require('../schemes/AgendamentoSchema');
 const Barbearia = require('../schemes/BarbeariaSchema');
+const AgendamentoController = require('./AgendamentoController');
 
 class AgendaController {
     async salvar(req, res) {
@@ -13,7 +14,7 @@ class AgendaController {
             idsDoAgendamento = await Agendamento.find({ '_id': {$in: idsDoAgendamento} });
         }
         //cria uma agenda
-        const resultado = await Agenda.create(resultado);
+       // const resultado = await Agenda.create(conteudo);
         
         //agenda a barbearia
         if (idDaAgenda != null && idDaAgenda != 'undefined' && idDaAgenda != '') {
@@ -24,7 +25,7 @@ class AgendaController {
     }
 
     async listar(req, res) {
-        const resultado = await Agenda.find({});
+        const resultado = await Agendamento.find({});
         res.json(resultado);
     }
 

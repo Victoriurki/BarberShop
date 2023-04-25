@@ -1,4 +1,4 @@
-const Agenda = require('../schemes/AgendaScheme');
+const Agenda = require('../schemes/AgendaSchema');
 const Barbearia = require('../schemes/BarbeariaSchema');
 const Barbeiro = require('../schemes/BarbeiroSchema');
 const Cliente = require('../schemes/ClienteSchema');
