@@ -4,9 +4,11 @@ const express = require('express');
 
 const Router = express.Router();
 Router.get('/', AgendamentoController.listar);
-Router.get('/', AgendamentoController.buscarPorId);
+Router.get('/:id', AgendamentoController.buscarPorId);
 Router.post('/', AgendamentoController.salvar);
-Router.put('/', AgendamentoController.atualizar);
-Router.put('/', AgendamentoController.excluir);
+Router.put('/:id/status', AgendamentoController.atualizar);
+Router.put('/:id', AgendamentoController.atualizar);
+Router.delete('/:id', AgendamentoController.excluir);
 
 module.exports = Router;
+

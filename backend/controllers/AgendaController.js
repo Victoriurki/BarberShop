@@ -29,7 +29,11 @@ class AgendaController {
         res.json(resultado);
     }
 
-
+    /* async atualizar(req, res) {
+        const id = req.params._id;
+        const conteudo = req.body;
+        const resultado = await Agendamento.findOneAndUpdate({ '_id': id }, conteudo, { new: true });
+        res.json(resultado); */
 
 
 }

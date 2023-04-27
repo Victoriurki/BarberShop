@@ -22,4 +22,3 @@ const Agendamento = mongoose.model('Agendamento', AgendamentoSchema);
 module.exports = Agendamento;
 
 
-

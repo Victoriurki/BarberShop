@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const BarbeariaSchema = new mongoose.Schema({
+  
   nome: String,
   endereco: String,
   telefone: String,
