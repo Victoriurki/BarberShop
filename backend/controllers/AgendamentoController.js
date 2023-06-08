@@ -15,6 +15,8 @@ class AgendamentoController {
         const id = req.params.id;
         const conteudo = await Agendamento.findOne({ '_id': id });
         res.json(conteudo);
+    
+    
     }
 
     async salvar(req, res) {
@@ -50,7 +52,7 @@ class AgendamentoController {
     }
 
     async atualizar(req, res) {
-        const id = req.body._id;
+        const id = req.params.id;
         const conteudo = req.body;
         const resultado = await Agendamento.findOneAndUpdate({ '_id': id }, conteudo, { new: true });
         res.json(resultado);

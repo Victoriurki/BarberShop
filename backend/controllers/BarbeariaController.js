@@ -47,7 +47,7 @@ class BarbeariaController {
     async atualizar(req, res) {
         const id = req.params.id;
         const conteudo = req.body;
-        const resultado = await Barbearia.findOneAndUpdate({ '_id': id }, conteudo, { new: true });
+        const resultado = await Barbearia.findOneAndUpdate({'_id': id}, conteudo, { new: true });
         res.json(resultado);
     }
 
