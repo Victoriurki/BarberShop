@@ -1,7 +1,11 @@
 require('./database/mongo');
+const cors = require('cors');
 const express = require('express');
 const servidor = express();
 servidor.use(express.json());
+servidor.use(cors());
+
+
 
 //Rotas
 const BarbeariaRouter = require('./routes/barbeariaRouter');
